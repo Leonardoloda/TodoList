@@ -1,0 +1,35 @@
+@import "./styles/classes.scss";
+
+body {
+  background-color: mediumaquamarine;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 80% 10%;
+
+  &__content {
+    padding: 2rem;
+    overflow-y: auto;
+  }
+}
+
+*:focus {
+  border: 2px solid darkgreen;
+  padding: 0.5rem;
+  box-shadow: 4px 4px 4px black;
+}
