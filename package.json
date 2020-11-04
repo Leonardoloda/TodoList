@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "prebuild": "prettier --write ./src/",
+    "prebuild": "prettier --write ./src",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "format": "prettier --write .",
-    "test": "jest --verbose",
-    "test:watch": "jest --watchAll",
+    "format": "prettier --write ./src",
+    "test": "jest",
+    "test:watch": "jest --verbose --watchAll",
     "test:report": "jest --coverage"
   },
   "dependencies": {
