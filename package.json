@@ -10,6 +10,7 @@
     "format": "prettier --write ./src",
     "test": "jest",
     "test:watch": "jest --verbose --watchAll",
+    "test:e2e": "cypress run --config-file cypress.json",
     "test:report": "jest --coverage"
   },
   "dependencies": {

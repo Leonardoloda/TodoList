@@ -1,0 +1,7 @@
+{
+    "projectId": "jre2y2",
+    "integrationFolder": "e2e/",
+    "env": {
+        "CYPRESS_RECORD_KEY": "35db8a98-8838-4b23-acb6-3e894f9ad1dd"
+    }
+}
