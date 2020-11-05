@@ -50,7 +50,7 @@ yarn test:e2e
 Althoug this app was created purely as a practice excercise, I'm happy to answer any questions or feedback about the app.
 
 ## Authors
->Leonardo Lopez Daza
->Web UI developer
->[My Linkedn](https://www.linkedin.com/in/leonardo-lopez-daza/)
+>Leonardo Lopez Daza<br>
+>Web UI developer<br>
+>[My Linkedn](https://www.linkedin.com/in/leonardo-lopez-daza/)<br>
 >[My mail](leonardoloda2@gmail.com)
