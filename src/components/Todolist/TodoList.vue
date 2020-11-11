@@ -22,11 +22,12 @@ export default {
   components: {
     Todo,
   },
+  computed: {
+    todos()  {
+      return this.$store.state.todos;
+    }
+  },
   props: {
-    todos: {
-      type: Array,
-      required: true,
-    },
     deleteTodo: {
       type: Function,
       required: true,

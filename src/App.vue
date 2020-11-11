@@ -1,4 +1,3 @@
-// TODO: Add a footer to the app
 <template>
   <div id="app" class="app">
     <Title />
@@ -20,9 +19,17 @@ import Searchbar from "./components/Searchbar/Searchbar";
 import TodoList from "./components/Todolist/TodoList";
 import Footer from "./components/Footer/Footer";
 
+import { TodoStore } from "./store/TodoStore";
+
+import Vue from "vue";
+import Vuex from "vuex";
+
 import "./App.scss";
 
-export default {
+Vue.use(Vuex);
+const store = new Vuex.Store(TodoStore);
+
+const App = {
   name: "App",
   components: {
     Title,
@@ -30,6 +37,7 @@ export default {
     TodoList,
     Footer,
   },
+  store,
   data() {
     return {
       todos: [],
@@ -48,4 +56,6 @@ export default {
     },
   },
 };
+
+export default App;
 </script>
