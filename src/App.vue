@@ -19,6 +19,8 @@ import Searchbar from "./components/Searchbar/Searchbar";
 import TodoList from "./components/Todolist/TodoList";
 import Footer from "./components/Footer/Footer";
 
+import {randomAlphanumeric} from "./Utilities/Randomizer";
+
 import { TodoStore } from "./store/TodoStore";
 
 import Vue from "vue";
@@ -44,10 +46,9 @@ const App = {
     };
   },
   methods: {
-    // TODO: Find a better way to handle the ids
     addTodo: function (todo) {
       this.todos.push({
-        id: this.todos.length + 1,
+        id: randomAlphanumeric(),
         label: todo,
       });
     },
